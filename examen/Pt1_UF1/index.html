@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+</head>
+<body onload="Reloj()">
+    <div>
+        <ul>
+            <li> <br>
+                <form action="Reloj()"></form>
+                <form name="form_reloj">
+                <input readonly="readonly" type="text" name="reloj" size="10">
+            </li>
+            <li>
+                <p id="dia"></p>
+            </li>
+            <li>
+                <br>
+                <button id="logout">logout</button>
+            </li>
+            <li>
+                <br>
+                <div id="respuesta"></div>
+            </li>
+        </ul>
+        
+        
+        </form> 
+    </div>
+    <div id="reservar">
+        <div id="reservar_info">
+            <label class="text" for="">Nombre y apellido</label>
+            <input type="text"  id="nom_cognom">
+            <div class="text" id="errorN"></div>
+            <label class="text" for="">DNI</label>
+            <input type="text"  id="dni">
+            <div class="text" id="errorD"></div>
+            <label class="text" for="">Correo</label>
+            <input type="text"  id="mail">
+            <div class="text" id="errorE"></div>
+            <label class="text" for="">Telefono</label>
+            <input type="number"  id="telefono">
+            <div class="text" id="errorN"></div>
+            <button type="button" id="reservar_vuelo">Reservar</button>
+            <!-- readonly="readonly" -->
+        </div>
+
+    </div>
+        <div id="busqueda">
+            <div id="info">
+            <p class="text">Preu:</p><p class="text" id="preu"></p>
+            <p class="text">Duracio:</p><p class="text" id="duracio"></p>
+            </div>
+            <div id="id_comprar" >
+                <label for="" class="text">Salida</label>
+                <select name="" id="salidas" required></select><br>
+                <label for="" class="text">Vuelta</label>
+                <select name="" id="vueltas"></select><br>
+                <p class="text" id="epiteto"></p>
+                <p class="text" id="epiteto1"></p>
+                <button type="button" id="comprar">Comprar</button>
+            </div>
+            
+        </div>
+        <div id="vuelo" class="contenedor">
+            <div>Busqueda de vuelo</div>
+            <div id="or_des">
+                <label for="origen">origen</label>
+                <select id="origen">
+                    <option selected disabled>Ciudades</option>
+
+                </select>
+
+                <label for="destinacio">destinacio</label>
+                <select id="destinacio">
+                    <option selected disabled>Ciudades</option>
+                    
+                </select>
+            
+            </div>
+            <div id="ida_vuelta">
+                <label for="fecha_ida"> data d'anada</label>
+                <input type="date" id="fecha_ida" value="dia" min="dia" max="" required>
+                <label for="fecha_vuelta"> data de tornada</label>
+                <input type="date" id="fecha_vuelta" value="dia" min="dia" required>
+            </div>
+             <div id="num_pasajeros">
+                <label for="pasajeros">numero de pasajeros</label>
+                <select id="pasajeros">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div> 
+            <button type="button" id="cercar_vol">Cercar vol</button>
+            <div id="response"></div>
+        </div>
+        <div id="sesion" class="text">
+            <button id="login">login</button>
+            <button id="register">register</button>
+           
+            <div id="log">
+                <label class="text" for="userName">user name</label>
+                <input type="text" name="" id="userName">
+                <br>
+                <label class="text" for="password">password</label>
+                <input type="password" name="" id="password">
+            </div>
+            <div id="reg">
+                <label class="text" for="NewuserName">new user name</label>
+                <input class="text" type="text" name="" id="NewuserName">
+                <br>
+                <label for="Newpassword">new password</label>
+                <input type="password" name="" id="Newpassword">
+            </div>
+            
+            <br>
+            <button type="button" id="inicia_sessio">inicia sessio</button>
+            <button type="button" id="registra_sessio">registra sessio</button>
+            
+
+        </div>
+        <div id="data_vuelo">
+            <label class="text2" for="">Nombre y apellido:</label>
+            <div class="text" id="info_nom_cognom"></div>
+            <label class="text2" for="">DNI:</label>
+            <div class="text" id="info_dni"></div>
+            <label class="text2" for="">Correo:</label>
+            <div class="text" id="info_mail"></div>
+            <label class="text2" for="">Numero de telefono:</label>
+            <div class="text" id="info_telefono"></div>
+            <label class="text2" for="">Lugar de ida:</label>
+            <div class="text" id="info_ida"></div>
+            <label class="text2" for="">Lugar de vuelta:</label>
+            <div class="text" id="info_vuelta"></div>
+            <label class="text2" for="">Fecha de ida:</label>
+            <div class="text" id="info_fecha_ida"></div>
+            <label class="text2" for="">Fecha de vuelta:</label>
+            <div class="text" id="info_fecha_vuelta"></div>
+            <label class="text2" for="">Numero de billetes adquiridos:</label>
+            <div class="text" id="info_pasajeros"></div>
+            <label class="text2" for="">Precio:</label>
+            <div class="text" id="info_preu"></div>
+            <label class="text2" for="">Duracion del vuelo:</label>
+            <div class="text" id="info_duracio"></div>
+            <button type="button" id="imprimir">imprimir</button>
+        </div>
+       
+        
+    
+
+</body>
+</html>
